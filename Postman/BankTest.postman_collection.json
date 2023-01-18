@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "acf48f3c-8fd8-48b8-a519-28966ae62236",
+		"name": "Bank Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"admin@localhost.com\",\r\n  \"password\": \"P@ssword1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44327/api/Authentication/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44327",
+					"path": [
+						"api",
+						"Authentication",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Debit",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbkBsb2NhbGhvc3QuY29tIiwianRpIjoiMzBmNTZhNGUtZjg4Mi00M2M3LWExMzktNDQyZDZlZDUzMGM1IiwiZW1haWwiOiJhZG1pbkBsb2NhbGhvc3QuY29tIiwidWlkIjoiOGU0NDU4NjUtYTI0ZC00NTQzLWE2YzYtOTQ0M2QwNDhjZGI5IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYXRvciIsImV4cCI6MTY3NDAxMjE1NCwiaXNzIjoiSFJMZWF2ZW1hbmFnZW1lbnQiLCJhdWQiOiJIUkxlYXZlbWFuYWdlbWVudFVzZXIifQ.LoUpaIPHHb51W9e8wm5QwlWidZehPYl5z3bXKLlNBTQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"accountId\": \"0cdc56fe-94a6-4bec-9c66-1ee8320f8fb8\",\r\n  \"value\": 7090\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44327/api/DebitOperation",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44327",
+					"path": [
+						"api",
+						"DebitOperation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Credit",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbkBsb2NhbGhvc3QuY29tIiwianRpIjoiNjBkMDVhYWUtNmVkMC00ZDc5LWIyNmItY2MwMTA5OGIyMDg0IiwiZW1haWwiOiJhZG1pbkBsb2NhbGhvc3QuY29tIiwidWlkIjoiOGU0NDU4NjUtYTI0ZC00NTQzLWE2YzYtOTQ0M2QwNDhjZGI5IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYXRvciIsImV4cCI6MTY3NDAxMzM3MCwiaXNzIjoiSFJMZWF2ZW1hbmFnZW1lbnQiLCJhdWQiOiJIUkxlYXZlbWFuYWdlbWVudFVzZXIifQ.9kGXpWk-_fBeIckLxmf4fZezYCK0khK6yl-wqMibsKc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"accountId\": \"0cdc56fe-94a6-4bec-9c66-1ee8320f8fb8\",\r\n  \"value\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44327/api/CreditOperation",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44327",
+					"path": [
+						"api",
+						"CreditOperation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Bank Account",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbkBsb2NhbGhvc3QuY29tIiwianRpIjoiMzBmNTZhNGUtZjg4Mi00M2M3LWExMzktNDQyZDZlZDUzMGM1IiwiZW1haWwiOiJhZG1pbkBsb2NhbGhvc3QuY29tIiwidWlkIjoiOGU0NDU4NjUtYTI0ZC00NTQzLWE2YzYtOTQ0M2QwNDhjZGI5IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYXRvciIsImV4cCI6MTY3NDAxMjE1NCwiaXNzIjoiSFJMZWF2ZW1hbmFnZW1lbnQiLCJhdWQiOiJIUkxlYXZlbWFuYWdlbWVudFVzZXIifQ.LoUpaIPHHb51W9e8wm5QwlWidZehPYl5z3bXKLlNBTQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"number\": 201,\r\n  \"ammount\": 200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44327/api/BankAccount",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44327",
+					"path": [
+						"api",
+						"BankAccount"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
