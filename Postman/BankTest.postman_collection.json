@@ -20,12 +20,12 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:44327/api/Authentication/login",
+					"raw": "https://localhost:49153/api/Authentication/login",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
-					"port": "44327",
+					"port": "49153",
 					"path": [
 						"api",
 						"Authentication",
@@ -43,7 +43,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbkBsb2NhbGhvc3QuY29tIiwianRpIjoiMzBmNTZhNGUtZjg4Mi00M2M3LWExMzktNDQyZDZlZDUzMGM1IiwiZW1haWwiOiJhZG1pbkBsb2NhbGhvc3QuY29tIiwidWlkIjoiOGU0NDU4NjUtYTI0ZC00NTQzLWE2YzYtOTQ0M2QwNDhjZGI5IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYXRvciIsImV4cCI6MTY3NDAxMjE1NCwiaXNzIjoiSFJMZWF2ZW1hbmFnZW1lbnQiLCJhdWQiOiJIUkxlYXZlbWFuYWdlbWVudFVzZXIifQ.LoUpaIPHHb51W9e8wm5QwlWidZehPYl5z3bXKLlNBTQ",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbkBsb2NhbGhvc3QuY29tIiwianRpIjoiODk0ZjcyYjMtNWY1Yy00ZGIzLTg3ZjItM2ZmNzcxMWQ1MDkwIiwiZW1haWwiOiJhZG1pbkBsb2NhbGhvc3QuY29tIiwidWlkIjoiOGU0NDU4NjUtYTI0ZC00NTQzLWE2YzYtOTQ0M2QwNDhjZGI5IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYXRvciIsImV4cCI6MTY3NDA0NjA0OCwiaXNzIjoiSFJMZWF2ZW1hbmFnZW1lbnQiLCJhdWQiOiJIUkxlYXZlbWFuYWdlbWVudFVzZXIifQ.I4lGQV9f62nEJxutKdt_2CH63W8T0V81d9yHkXCemjk",
 							"type": "string"
 						}
 					]
@@ -60,12 +60,12 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:44327/api/DebitOperation",
+					"raw": "https://localhost:49153/api/DebitOperation",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
-					"port": "44327",
+					"port": "49153",
 					"path": [
 						"api",
 						"DebitOperation"
@@ -99,12 +99,12 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:44327/api/CreditOperation",
+					"raw": "https://localhost:49153/api/CreditOperation",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
-					"port": "44327",
+					"port": "49153",
 					"path": [
 						"api",
 						"CreditOperation"
@@ -138,12 +138,12 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:44327/api/BankAccount",
+					"raw": "https://localhost:49153/api/BankAccount",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
-					"port": "44327",
+					"port": "49153",
 					"path": [
 						"api",
 						"BankAccount"
